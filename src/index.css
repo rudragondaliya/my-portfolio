@@ -1,0 +1,253 @@
+@font-face {
+    font-family: portfolio;
+    src: url("../public/helvetica-w01-bold.woff2");
+}
+
+*{
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box !important;
+    font-family: portfolio;
+}
+
+.Home{
+    position: relative;
+}
+
+.name{
+    font-size: 240px !important;
+}
+
+.surname{
+    margin-top: -110px !important;
+}
+
+.moving-text {
+        overflow-x: auto;
+        white-space: nowrap;
+        margin-top: -10px !important;
+        
+    }
+
+    .moving-text::-webkit-scrollbar {
+        display: none;
+    }
+
+    .con {
+        white-space: nowrap;
+        display: inline-block;
+        animation-name: move;
+        animation-duration: 10s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+    }
+
+    .moving-text h5 {
+        font-size: 1.5vw;
+        display: inline-block;
+    }
+
+    #gola {
+        display: inline-block;
+        margin: 2vw 2vw !important;
+    }
+
+    @keyframes move {
+     from{
+        transform: translate(0);
+     }
+     to{
+        transform: translate(-100%);
+     }
+ }
+
+
+.hire-btn>.btn:hover{
+   background-color: white;
+   color: black !important;
+   border: 2px solid black;
+   transition: 0.4s;
+}
+
+.nav-link:hover{
+    color: rgb(253, 85, 141) !important;
+}
+
+.heading-ab{
+    font-size: 50px !important;
+}
+
+.heading-1>h4{
+    font-size: 30px;
+    font-weight: 700;
+}
+
+ .Contact{
+    background-color: black;
+    /* position: relative; */
+}
+
+.con-text{
+    font-size: 80px;
+}
+
+.con-text-2{
+    position: absolute;
+    left: 150px;
+    top: 156px;
+}
+
+.con-text-3{
+    position: absolute;
+    left: 150px;
+    top: 252px;
+}
+
+.form-control{
+    height: 35px;
+    border-radius: 0px !important;
+    background-color: black !important;
+}
+
+input{
+    color: white !important;
+}
+
+input::placeholder{
+    color: white !important;
+}
+
+#message{
+    background-color: black !important;
+    color: white;
+
+}
+
+/* .project-img{
+    position: relative;
+}
+
+.overlay{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(241, 238, 238) !important;
+    z-index: 1000 !important;
+    position: absolute;
+    backdrop-filter: invert(80%);
+    
+} */
+
+.project-img {
+  position: relative;
+  overflow: hidden;
+}
+
+.project-img .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(241, 238, 238, 0.6);
+  backdrop-filter: blur(5px) brightness(90%); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: all 0.4s ease-in-out;
+  z-index: 2;
+}
+
+.project-img:hover .overlay {
+  opacity: 1;
+}
+
+
+.footer{
+    background-color: black;
+}
+
+.foot-txt{
+    font-size: 70px;
+}
+
+.foot-1{
+    position: absolute;
+    bottom: 140px;
+    left: 200px;
+}
+
+.foot-2{
+    position: absolute;
+    bottom: 40px;
+    left: 200px;
+}
+
+.loader{
+    height: 100vh;
+    margin: 0;
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 10000;
+}
+
+.loader h1{
+    font-size: 94px;
+}
+
+.loader h1::before{
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 25%;
+    color: white;
+    overflow: hidden;
+    animation: waterFill 6s infinite linear;
+}
+   
+
+@keyframes waterFill {
+  0% {
+    height: 0%;
+  }
+  25% {
+    height: 25%;
+  }
+  50%{
+    height: 50%;
+  }
+  75%{
+    height: 25%;
+  }
+  100%{
+    height: 25%;
+  }
+}
+
+/* .loading-text {
+    animation: fadeIn 1s infinite;
+} */
+
+#percentage{
+ position: absolute;
+ right: 390px;
+ bottom: 250px;
+ font-size: 20px;
+ color: white;
+}
+
+/* @keyframes fadeIn {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+} */
+
+
+
